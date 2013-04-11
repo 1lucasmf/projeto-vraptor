@@ -14,10 +14,10 @@
 				<div class="nav-collapse collapse">
 				
 					<ul class="nav">
-						<li><a href="${pageContext.request.contextPath}/">Inicio</a></li>
+						<li><a href="${pageContext.request.contextPath}/">home</a></li>
 						<li class="divider-vertical"></li>
 						
-						<li><a href="${pageContext.request.contextPath}/ajuda">Ajuda</a></li>
+						<li><a href="${pageContext.request.contextPath}/help">help</a></li>
 						<li class="divider-vertical"></li>
 					</ul>
 					<ul class="nav pull-right">
@@ -25,7 +25,7 @@
 							<a href="profile.html">${usuario}</a>
 						</li>
 						<li>
-							<a href="${pageContext.request.contextPath}/login/logoff">Sair</a>
+							<a href="${pageContext.request.contextPath}/login/logoff">logout</a>
 						</li>
 					</ul>
 				</div>

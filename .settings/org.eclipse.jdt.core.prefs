@@ -1,11 +1,9 @@
-#Mon Mar 11 19:26:09 BRT 2013
+#Thu Apr 11 14:47:53 GMT-03:00 2013
 encoding//src=Cp1252
-org.eclipse.jdt.core.compiler.compliance=1.6
-encoding//src/test/resources=Cp1252
-org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
-org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
-encoding//test=Cp1252
 encoding//resources=Cp1252
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
 eclipse.preferences.version=1
+encoding//src/test/resources=Cp1252
+encoding//test=Cp1252
 org.eclipse.jdt.core.compiler.source=1.6
-org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.compliance=1.6

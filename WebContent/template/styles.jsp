@@ -2,8 +2,6 @@
 <link href="${pageContext.request.contextPath}/template/css/bootstrap-responsive.min.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/template/css/docs.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/template/css/site.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/template/css/bootstrap-datatable.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/template/css/bootstrap-datepicker.css" rel="stylesheet">
 
 <style type="text/css">
   body {

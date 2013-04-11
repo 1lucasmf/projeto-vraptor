@@ -1,21 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator" %>
 
-<html ng-app lang="pt-BR">
+<html lang="pt-BR">
   <head>
-    <title>Beauty Studio</title>
-	<!-- import das meta-tags -->
-	<jsp:include page="/template/meta.jsp" />
+    <title>VStore</title>
     
-    <!-- Le styles -->
 	<jsp:include page="/template/styles.jsp" />
-	
-	<!-- Le javascripts -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <jsp:include page="/template/scripts.jsp" />
-    
-    <!-- Fav and touch icons -->
-	<jsp:include page="/template/favicon.jsp" />
    
     <!-- atributos injetados pelo sitemesh -->
     <decorator:head/>
@@ -23,11 +14,10 @@
 
   <body>
 	
-	<!-- barra escura que fica sempre presente na tela -->
+	<!-- sempre presente no topo da tela -->
 	<jsp:include page="/template/principal-bar.jsp" />
 	
 	<!-- menu principal -->
-	<jsp:include page="/template/principal-menu.jsp" />
 	
 	<!-- área do conteúdo -->
 	<div class="container">
@@ -51,13 +41,10 @@
 		 </div><!-- /container-fluid -->
 	     <hr/>
 	
-      	<footer>
+      	<footer class="footer">
 			<jsp:include page="/template/footer.jsp" />
       	</footer>
     </div><!--/container-->
-
-    <!-- Le javascripts -->
-    <!-- Placed at the end of the document so the pages load faster -->
 
   </body>
 </html>

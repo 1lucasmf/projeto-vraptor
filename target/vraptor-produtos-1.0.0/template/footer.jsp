@@ -1,1 +1,0 @@
-<p>&copy; <a href="http://g-4f.com/brains">Brains</a> 2012</p>

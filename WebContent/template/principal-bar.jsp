@@ -7,11 +7,11 @@
 				<span class="icon-bar"></span>
 			</a> 
 			
-			<a class="brand" href="#">@SalaoLogado</a>
+			<a class="brand" href="#">@VStore</a>
 			<!-- Everything you want hidden at 940px or less, place within here -->
 			<div class="nav-collapse collapse">
 				<p class="navbar-text pull-right">
-					Beauty Studio. Powered by 
+					Virtual Store 
 					<a href="#"	class="navbar-link">Brains</a>
 				</p>
 			</div>

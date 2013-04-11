@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <decorators defaultdir="/decorator">
-	<!-- adicao dos contextos que estao dentro de jsp -->
+	<!-- paginas que serao decoradas de acordo com o layout padrao -->
 	<decorator name="master" page="master.jsp">
 		<pattern>/*</pattern>
 	</decorator>
