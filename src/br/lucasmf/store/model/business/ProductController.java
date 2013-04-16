@@ -69,6 +69,7 @@ public class ProductController {
 	
 	@Delete("/products/{product.id}")
 	public void destroy(Product product){
+		product = dao.find(product.getId());
 		dao.destroy(product);
 		result.redirectTo(this).index();
 	}
@@ -76,7 +77,15 @@ public class ProductController {
 	@Get({"/products/{id}"})
 	public Product show(long id){
 		return dao.find(id);
+		
 	}
+	
+//	@Get({"/products/{id}"})
+//	public void show(long id){
+//		Product product =  dao.find(id);
+//		result.include("product", product);
+//		result.nothing();
+//	}
 	
 	@Get({"/products/{id}/xml"})
 	public void toXML(long id){

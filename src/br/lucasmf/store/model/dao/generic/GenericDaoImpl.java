@@ -60,7 +60,9 @@ public class GenericDaoImpl<T> implements GenericDao<T> {
 
         @Override
         public void destroy(T objeto) {
-                entityManager.remove(objeto);
+        	Session session = (Session) entityManager.getDelegate();
+        	session.delete(objeto);
+        	session.flush();
         }
         
 }

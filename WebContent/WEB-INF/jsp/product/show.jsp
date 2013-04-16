@@ -1,24 +1,20 @@
 <head>
-	<title>User [show]</title>
+	<title>Product [show]</title>
 </head>
 <body>
 	<p>
-		<b>Registration:</b>
-		${user.registration}
-	</p>
-	<p>
 		<b>Name:</b>
-		${user.name}
+		${product.name}
 	</p>
 	<p>
-		<b>Senha:</b>
-		${user.senha}
+		<b>Description:</b>
+		${product.description}
 	</p>
 	<p>
-		<b>Email:</b>
-		${user.email}
+		<b>Price:</b>
+		${product.price}
 	</p>
 
-	<a href="${pageContext.request.contextPath}/users/${user.id}/edit">Edit</a>
-	<a href="${pageContext.request.contextPath}/users">Back</a>
+	<a href="${pageContext.request.contextPath}/products/${product.id}/edit">Edit</a>
+	<a href="${pageContext.request.contextPath}/products">Back</a>
 </body>

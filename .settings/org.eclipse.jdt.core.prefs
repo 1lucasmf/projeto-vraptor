@@ -1,9 +1,9 @@
-#Thu Apr 11 14:47:53 GMT-03:00 2013
-encoding//src=Cp1252
-encoding//resources=Cp1252
+#Mon Apr 15 10:10:22 GMT-03:00 2013
+encoding//src=UTF8
+encoding//resources=UTF8
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
 eclipse.preferences.version=1
-encoding//src/test/resources=Cp1252
-encoding//test=Cp1252
+encoding//src/test/resources=UTF8
 org.eclipse.jdt.core.compiler.source=1.6
+encoding//test=UTF8
 org.eclipse.jdt.core.compiler.compliance=1.6
