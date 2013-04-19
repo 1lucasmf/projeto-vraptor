@@ -24,6 +24,7 @@
 	            });
 	        }
 	    });
+	    
     </script>
 </head>
 <body>
@@ -108,6 +109,40 @@
 			<a href="#" class="btn" data-dismiss="modal" aria-hidden="true"> Cancel </a> 
 		</div>
 	</div>
+	
+	
+	<!-- teste de combos -->
+	<div>
+		<label for='products-combo'>Products:</label> 
+		<select id='products-combo' class="selectpicker" name='product.id'>
+			<c:forEach var="product" items="${productList}">
+				<option value="${product.id}"> ${product.name}</option>
+			</c:forEach>
+		</select> <br>
+		
+		<label for='users-combo'>Users:</label> 
+		<select id='users-combo' name='user.id' ></select> <br>
+	</div>
 
+	<script>
+		 $('#products-combo').change(function(product){
+			 console.log(product.target.value)
+			 $.ajax({
+		    	    type: "GET",
+		    	    url:  "http://localhost:8080/vstore/users/list", 
+		    	    contentType: "application/json; charset=utf-8",
+		    	    dataType: "json",
+		    	    success: function(result) {
+		    		    $(result.list).each(function(count, obj){
+		    		    	var option = new Option(obj.name, obj.id)
+		    		    	$('#users-combo').append(option)
+		    		    })
+		    	    },
+		    	    error: function(err) {
+		    	        alert(err.toString());
+		    	    }
+		    	});
+		 });
+	</script>
 
 </body>

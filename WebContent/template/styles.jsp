@@ -1,5 +1,6 @@
 <link href="${pageContext.request.contextPath}/template/css/bootstrap.min.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/template/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/template/css/bootstrap-select.min.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/template/css/docs.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/template/css/site.css" rel="stylesheet">
 

@@ -9,7 +9,10 @@ import br.com.caelum.vraptor.Put;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
+import br.com.caelum.vraptor.view.Results;
+import br.lucasmf.store.model.dao.ProductDao;
 import br.lucasmf.store.model.dao.UserDao;
+import br.lucasmf.store.model.entity.Product;
 import br.lucasmf.store.model.entity.User;
 
 @Resource
@@ -17,13 +20,15 @@ public class UserController {
 
 	private final Result result;
 	private final UserDao dao;
+	private final ProductDao productDao;
 
 	private final Validator validator;
 
-	public UserController(Result result, UserDao dao,
+	public UserController(Result result, UserDao dao, ProductDao productDao,
 			Validator validator) {
 		this.result = result;
 		this.dao = dao;
+		this.productDao = productDao;
 
 		this.validator = validator;
 	}
@@ -71,4 +76,12 @@ public class UserController {
 		dao.destroy(dao.find(user.getId()));
 		result.redirectTo(this).index();
 	}
+	
+	@Get("/users/list")
+	public void listByProduct(Product product) {
+		//product  = productDao.find(product.getId());
+		List<User> userList = dao.findAll();
+		result.use(Results.json()).from(userList).serialize();
+	}
+	
 }
